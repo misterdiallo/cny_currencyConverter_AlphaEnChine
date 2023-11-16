@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaEnChine - Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="converter-box">
+            <h1>AlphaEnChine <br /> CNY Currency Converter</h1>
+            <div class="input-group mb-4">
+                <input type="number" id="amount" class="form-control" placeholder="Amount in CNY">
+            </div>
+            <!-- <div class="result" id="conversionSentence"></div> -->
+            <div class="copy">
+                <div id="conversionSentence" class="conversion-sentence">
+                    Prix
+                    <button id="copyButton" class="copy-button">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <div id="groupprice" class="groupprice">
+                    Group
+                    <button id="copyGroup" class="copy-Group">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="currency-boxes">
+                <div class="currency-box">
+                    <div class="flagAndName">
+                        <img src="flags/gnf_flag.png" class="flag">
+                        <div class="currency-name">GNF</div>
+                    </div>
+                    <div class="result"><span id="gnfResult">0.00 </span></div>
+                    <div class="exchange-rate">1 CNY = <span id="gnfRate">0.00 </span></div>
+                </div>
+                <div class="currency-box">
+                    <div class="flagAndName">
+                        <img src="flags/xof_flag.png" class="flag">
+                        <div class="currency-name">XOF</div>
+                    </div>
+                    <div class="result"><span id="xofResult">0.00 </span></div>
+                    <div class="exchange-rate">1 CNY = <span id="xofRate">0.00 </span></div>
+                </div>
+                <div class="currency-box">
+                    <div class="flagAndName">
+                        <img src="flags/usd_flag.png" class="flag">
+                        <div class="currency-name">USD</div>
+                    </div>
+                    <div class="result"><span id="usdResult">0.00 </span></div>
+                    <div class="exchange-rate">1 CNY = <span id="usdRate">0.00 </span></div>
+                </div>
+                <div class="currency-box">
+                    <div class="flagAndName">
+                        <img src="flags/eur_flag.png" class="flag">
+                        <div class="currency-name">EUR</div>
+                    </div>
+                    <div class="result"><span id="eurResult">0.00 </span></div>
+                    <div class="exchange-rate">1 CNY = <span id="eurRate">0.00 </span></div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-3" id="fetchRates">Fetch Exchange Rates</button>
+    </div>
+    <div id="notification-container" class="notification-container">
+        <div id="notification" class="notification">
+            <div class="notification-icon-div">
+                <i class="notification-icon"></i>
+            </div>
+            <div class="notification-content">
+                <h4 class="notification-title">SUCCESS</h4>
+                <p class="notification-text">This is a success message. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="notification-close">
+                <i class="fas fa-times"></i> <!-- Close icon -->
+            </div>
+        </div>
+    </div>
+    <div id="loading-overlay" class="loading-overlay"></div>
+    <script src="https://kit.fontawesome.com/c92a9f2c73.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

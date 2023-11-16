@@ -1,0 +1,179 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.converter-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.form-control {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    /* Reduce padding for a smaller input */
+    font-size: 16px;
+    margin-top: 5px;
+    /* Reduce margin for a smaller input */
+}
+
+.result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#conversionSentence,
+#fetchRates,
+#groupprice {
+    display: none;
+}
+
+.currency-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    white-space: normal;
+}
+
+.currency-box {
+    background-color: #f6f6f6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+}
+
+.flagAndName {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* Adjust margin for spacing */
+}
+
+.currency-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.exchange-rate {
+    font-size: 8px;
+    color: #007bff;
+}
+
+/* Add styles for the notification container */
+.notification-container {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification-icon-div {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.notification-content {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.notification-title {
+    font-size: 15;
+    margin: 0;
+}
+
+.notification-text {
+    margin: 0;
+    font-size: 12px;
+}
+
+.notification-close {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Style the sentence container */
+.conversion-sentence,
+.groupprice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the individual currency amounts */
+.amount-cny,
+.amount-gnf,
+.amount-xof,
+.amount-usd {
+    margin-right: 10px;
+    white-space: normal;
+}
+
+/* Style the copy button */
+.copy-button,
+.copy-Group {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.copy-button:hover,
+.copy-Group:hover {
+    color: #0056b3;
+}
